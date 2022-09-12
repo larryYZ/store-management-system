@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.eecs3311_project.IndexController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="300.0" styleClass="sidebar">
+         <children>
+            <Label prefHeight="75.0" prefWidth="300.0" text="V I D E O  C O" textFill="#88888b">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@search.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="searchByNameText" opacity="0.8" promptText="Search by Movie Name" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox>
+               <padding>
+                  <Insets left="15.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label text="Genre" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <RadioButton fx:id="actionRadio" mnemonicParsing="false" text="Action" textFill="#a2a2a2">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="animationRadio" mnemonicParsing="false" text="Animation" textFill="#a2a2a2">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="comedyRadio" mnemonicParsing="false" text="Comedy" textFill="#a2a2a2">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="documentaryRadio" mnemonicParsing="false" text="Documentary" textFill="#a2a2a2">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="dramaRadio" mnemonicParsing="false" text="Drama" textFill="#a2a2a2">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="romanceRadio" mnemonicParsing="false" text="Romance" textFill="#a2a2a2">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="scienceFictionRadio" mnemonicParsing="false" text="Science Fiction" textFill="#a2a2a2">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="thrillerRadio" mnemonicParsing="false" text="Thriller" textFill="#a2a2a2">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <Button fx:id="clearSelectionButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Clear Selection" textFill="#8d8a8a" underline="true">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="adminPane">
+               <padding>
+                  <Insets left="15.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label text="Administrator" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="allOrdersButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="All Orders" textFill="#8d8a8a">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="customerAccountsButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Customer Accounts" textFill="#8d8a8a">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="adminAccountsButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Admin Accounts" textFill="#8d8a8a">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children></VBox>
+      <VBox layoutX="300.0" prefHeight="700.0" prefWidth="800.0" styleClass="parent">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="800.0">
+               <children>
+                  <Label fx:id="welcomeLabel" prefWidth="505.0" text="Welcome" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="accountButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Account" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ordersButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Orders" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cartButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Cart" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logoutButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Logout" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="800.0">
+               <children>
+                  <TableView fx:id="movieTable" layoutX="40.0" layoutY="10.0" prefHeight="550.0" prefWidth="720.0" style="-fx-background-color: transparent;">
+                    <columns>
+                      <TableColumn fx:id="titleColumn" prefWidth="258.0" text="Title" />
+                        <TableColumn fx:id="genreColumn" prefWidth="236.0" text="Genre" />
+                      <TableColumn fx:id="releaseDateColumn" prefWidth="225.0" text="Release Date" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="addNewMovieButton" layoutX="624.0" layoutY="578.0" mnemonicParsing="false" style="-fx-background-color: #335a7c #335a7c #335a7c #335a7c;" text="ADD NEW MOVIE" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children></VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+Emily,emily@gmail.com,5678,CUSTOMER,1,Emily Lin
+Kevin,kv@gmail.com,0000,CUSTOMER,0,Kevin Feng
+Eric,eric@hotmail.com,4321,CUSTOMER,3,Eric Zhao
+Larry,larryz@my.yorku.ca,1234,CUSTOMER,56,Larry Zhang
+adminA,adminA@videoco.com,1111,ADMIN,1,Cindy Zheng
+adminB,alex@videoco.com,2222,ADMIN,0,Alex Fang
+SuperAdmin,superAdmin@videoco.com,9999,SUPERADMIN,20,Emma Liang

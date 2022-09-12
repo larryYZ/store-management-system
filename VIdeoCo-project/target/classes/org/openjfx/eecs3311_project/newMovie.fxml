@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.eecs3311_project.NewMovieController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="300.0" styleClass="sidebar">
+         <children>
+            <Label prefHeight="75.0" prefWidth="300.0" text="V I D E O  C O" textFill="#88888b">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="backToHomeButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Back to Home" textFill="#5b5b5b" underline="true">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="300.0" prefHeight="700.0" prefWidth="800.0" styleClass="parent">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="800.0">
+               <children>
+                  <Label fx:id="welcomeLabel" prefWidth="505.0" text="Welcome" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="accountButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Account" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ordersButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Orders" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cartButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Cart" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logoutButton" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Logout" textFill="#5b5b5b">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox prefHeight="625.0" prefWidth="800.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="800.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Title" textFill="#5b5b5b">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextArea fx:id="movieTitleText" maxHeight="35.0" minHeight="35.0" opacity="0.8" prefHeight="35.0" prefWidth="405.0" style="-fx-background-color: transparent;" wrapText="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Arial" size="24.0" />
+                           </font>
+                        </TextArea>
+                        <Button fx:id="saveButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="177.0" style="-fx-background-color: #335a7c #335a7c;" text="SAVE" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="800.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Genre" textFill="#5b5b5b">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextArea fx:id="movieGenreText" maxHeight="30.0" minHeight="30.0" opacity="0.8" prefHeight="30.0" prefWidth="405.0" style="-fx-background-color: transparent;" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextArea>
+                        <Label fx:id="saveMessageLabel">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="800.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Release Date" textFill="#5b5b5b">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextArea fx:id="movieReleaseDateText" maxHeight="30.0" minHeight="30.0" opacity="0.8" prefHeight="30.0" prefWidth="405.0" style="-fx-background-color: transparent;" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="800.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Actors" textFill="#5b5b5b">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextArea fx:id="movieActorsText" maxHeight="30.0" minHeight="30.0" opacity="0.8" prefHeight="30.0" prefWidth="405.0" style="-fx-background-color: transparent;" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="800.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Directors" textFill="#5b5b5b">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextArea fx:id="movieDirectorsText" maxHeight="30.0" minHeight="30.0" opacity="0.8" prefHeight="30.0" prefWidth="405.0" style="-fx-background-color: transparent;" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="300.0" prefWidth="800.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Description" textFill="#5b5b5b">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextArea fx:id="movieDescriptionText" opacity="0.8" prefHeight="240.0" prefWidth="405.0" style="-fx-background-color: transparent;" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="30.0" top="10.0" />
+                           </VBox.margin>
+                        </TextArea>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="800.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Quantity" textFill="#5b5b5b">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextArea fx:id="movieQuantityText" maxHeight="30.0" minHeight="30.0" opacity="0.8" prefHeight="30.0" prefWidth="405.0" style="-fx-background-color: transparent;" wrapText="true">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
